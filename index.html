@@ -21,7 +21,9 @@
       <nav class="nav" aria-label="Main">
         <a href="#men">Men</a>
         <a href="#women">Women</a>
+        <a href="#kids">Kids</a>
         <a href="#shop">Flip Flops</a>
+        <a href="#sizes">Sizes</a>
         <a href="#about">Our Story</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -81,17 +83,26 @@
           <p>Find your perfect pair in our curated collections.</p>
         </div>
         <div class="category-grid">
-          <a href="#men" class="category-card" id="men">
+          <a href="#shop" class="category-card" id="men">
             <img src="images/showcase/craft-960.jpg" alt="Men's slippers" width="720" height="960" loading="lazy" />
-            <span>Men's Flip Flops</span>
+            <div class="category-label">
+              <span>Men's Flip Flops</span>
+              <small>Sizes 5 – 11 inch</small>
+            </div>
           </a>
-          <a href="#women" class="category-card" id="women">
+          <a href="#shop" class="category-card" id="women">
             <img src="images/showcase/comfort-960.jpg" alt="Women's slippers" width="720" height="960" loading="lazy" />
-            <span>Women's Flip Flops</span>
+            <div class="category-label">
+              <span>Women's Flip Flops</span>
+              <small>Sizes 5 – 10 inch</small>
+            </div>
           </a>
-          <a href="#shop" class="category-card">
-            <img src="images/showcase/style-960.jpg" alt="Everyday slippers" width="720" height="960" loading="lazy" />
-            <span>Everyday Collection</span>
+          <a href="#kids" class="category-card" id="kids">
+            <img src="images/showcase/style-960.jpg" alt="Kids slippers" width="720" height="960" loading="lazy" />
+            <div class="category-label">
+              <span>Kids Flip Flops</span>
+              <small>Sizes 2 – 5 inch</small>
+            </div>
           </a>
         </div>
       </div>
@@ -108,9 +119,36 @@
             <button class="filter-tab is-active" data-filter="all" role="tab" aria-selected="true">All</button>
             <button class="filter-tab" data-filter="men" role="tab" aria-selected="false">Men</button>
             <button class="filter-tab" data-filter="women" role="tab" aria-selected="false">Women</button>
+            <button class="filter-tab" data-filter="kids" role="tab" aria-selected="false">Kids</button>
           </div>
         </div>
         <div class="product-grid" id="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="size-guide" id="sizes">
+      <div class="container">
+        <div class="section-head">
+          <h2>Size Guide</h2>
+          <p>All sizes in inches. Mention your size when ordering on WhatsApp or call.</p>
+        </div>
+        <div class="size-grid">
+          <article class="size-card">
+            <h3>Men</h3>
+            <p class="size-range">5 – 11 inch</p>
+            <div class="size-chips" id="size-chips-men"></div>
+          </article>
+          <article class="size-card">
+            <h3>Women</h3>
+            <p class="size-range">5 – 10 inch</p>
+            <div class="size-chips" id="size-chips-women"></div>
+          </article>
+          <article class="size-card">
+            <h3>Kids</h3>
+            <p class="size-range">2 – 5 inch</p>
+            <div class="size-chips" id="size-chips-kids"></div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -174,7 +212,7 @@
     <section class="contact" id="contact">
       <div class="container contact-box">
         <h2>Ready to order?</h2>
-        <p>Call, WhatsApp, or email us with your size and style. We'll confirm availability and delivery.</p>
+        <p>Call, WhatsApp, or email with your <strong>size in inches</strong> and style. We'll confirm availability and delivery.</p>
         <div class="contact-actions">
           <a href="tel:+918106407372" class="btn btn-dark">+91 81064 07372</a>
           <a href="https://wa.me/918106407372" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
@@ -196,8 +234,8 @@
         <ul>
           <li><a href="#men">Men's Flip Flops</a></li>
           <li><a href="#women">Women's Flip Flops</a></li>
-          <li><a href="#shop">New Arrivals</a></li>
-          <li><a href="#shop">Best Sellers</a></li>
+          <li><a href="#kids">Kids Flip Flops</a></li>
+          <li><a href="#sizes">Size Guide</a></li>
         </ul>
       </div>
       <div>
